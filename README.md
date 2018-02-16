@@ -9,13 +9,13 @@
 
 
 ## 特点
-
 1.多页应用
 2.使用了postcss-loader，而不是过时的autoprefixer-loader（iview就是还用的它）
 
 ## 测试
-mocha
-jest
+Jest
+Enzyme
+参考：http://blog.csdn.net/qq673318522/article/details/70857678
 
 ## 代码检查
 elint
