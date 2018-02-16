@@ -4,7 +4,7 @@
   "description": "这是一个webpack+react+antd的模板",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/vosonwang/webpack_react_template"
   },
   "author": "voson wang",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-intl": "^2.4.0",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
     "utf8": "^3.0.0"
