@@ -7,10 +7,13 @@
 
 //todo 增加test
 
+## UI
+semantic-ui-react
 
 ## 特点
 1.多页应用
 2.使用了postcss-loader，而不是过时的autoprefixer-loader（iview就是还用的它）
+3.国际化 react-intl
 
 ## 测试
 Jest
@@ -26,3 +29,6 @@ webpack-bundle-analyzer
 
 ## 内嵌服务器
 webpack-dev-server
+
+## 更新日志
+2018-2-18 移除了antd UI库，以semantic-ui-react作为UI库
