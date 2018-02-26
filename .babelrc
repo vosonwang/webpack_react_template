@@ -17,6 +17,7 @@
     "react"
   ],
   "plugins": [
+    "lodash",
     "react-hot-loader/babel"
   ]
 }
