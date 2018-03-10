@@ -1,10 +1,10 @@
 {
   "name": "webpack_react_template",
   "version": "1.0.0",
-  "description": "这是一个webpack+react+semantic的模板",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vosonwang/webpack_react_template"
+    "url": ""
   },
   "author": "voson wang",
   "license": "ISC",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-eslint": "8.1.0",
+    "babel-eslint": "8.2.2",
     "babel-jest": "^22.2.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-lodash": "^3.3.2",
@@ -41,11 +41,11 @@
     "css-loader": "^0.28.9",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.17.0",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
