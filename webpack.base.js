@@ -1,17 +1,27 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: {
         admin: ['react-hot-loader/patch', './src/admin/index.js'],
         index: ['react-hot-loader/patch', './src/index/index.js'],
-        notFound: ['react-hot-loader/patch', './src/404/index.js'],
         vendor: ['lodash', 'react-dom', 'react-hot-loader', 'moment']
     },
     output: {
         filename: '[name].js',
         path: path.join(__dirname, './dist')
     },
+    plugins: [
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, 'public'),
+                to: path.join(__dirname, './dist'),
+                flatten: true,
+                ignore: ['index.html']
+            }
+        ])
+    ],
     module: {
         rules: [
             {

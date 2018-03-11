@@ -21,11 +21,6 @@ module.exports = merge(common, {
             template: 'public/index.html',
             chunks: ['index']
         }),
-        new HtmlWebpackPlugin({
-            filename: '404.html',
-            template: 'public/index.html',
-            chunks: ['notFound']
-        }),
         new ExtractTextPlugin({
             filename: '[name].css',
             allChunks: true
@@ -40,9 +35,9 @@ module.exports = merge(common, {
         historyApiFallback: {
             // 多页应用需要设置url重写
             rewrites: [
-                { from: /^\//, to: '/index.html' },
+                { from: /^\/$/, to: '/index.html' },
                 { from: /^\/admin/, to: '/admin.html' },
-                { from: /^\/.*/, to: '/404.html' }
+                { from: /./, to: '/404.html' }
             ]
         },
         compress: true

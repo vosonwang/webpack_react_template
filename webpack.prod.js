@@ -7,6 +7,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+
 const webpackConfig = merge(common, {
     output: {
         // 输出文件名称规则，这里会生成 'app.js'
@@ -63,17 +64,6 @@ const webpackConfig = merge(common, {
                 removeAttributeQuotes: true
             },
             chunks: ['manifest', 'vendor', 'index']
-        }),
-        new HtmlWebpackPlugin({
-            filename: '404.html',
-            template: 'public/index.html',
-            // 开启压缩html代码
-            minify: {
-                removeComments: true,
-                collapseWhitespace: true,
-                removeAttributeQuotes: true
-            },
-            chunks: ['manifest', 'vendor', 'notFound']
         })
     ]
 })
